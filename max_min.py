@@ -1,4 +1,26 @@
 
+def get_first_higgest_number(numbers):
+    n = len(numbers)
+    if n >= 1:
+        firstmax = numbers[0]
+        for i in range(1, n):
+            if numbers[i] > firstmax:
+                firstmax = numbers[i]
+        return firstmax
+    else:
+        raise Exception("the size list smaller from 1")
+
+def get_first_lowest_number(numbers):
+    n = len(numbers)
+    if n >= 1:
+        firstmin = numbers[0]
+        for i in range(1, n):
+            if numbers[i] < firstmin:
+                firstmin = numbers[i]
+        return firstmin
+    else:
+        raise Exception("the size list smaller from 1")
+
 def get_second_higgest_number(numbers):
     n = len(numbers)
     if n >= 2:
@@ -88,6 +110,10 @@ def get_third_lowest_number(numbers):
         raise Exception("the size list smaller from 3")
 
 numbers = [47,47,2,6,13,7,1,19,26,37,12,4,13,6,5,45,13,7]
+firstmax = get_first_higgest_number(numbers)
+print(firstmax)
+firstmin = get_first_lowest_number(numbers)
+print(firstmin)
 secondmax = get_second_higgest_number(numbers) # [47,47,2,6,13,7,1,19,26,37,12,4,13,6,5,45,13,7] => 45
 print(secondmax)
 secondmin = get_second_lowest_number(numbers) # [47,47,2,6,13,7,1,19,26,37,12,4,13,6,5,45,13,7] => 2
