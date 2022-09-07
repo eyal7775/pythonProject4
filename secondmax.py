@@ -1,17 +1,5 @@
 
-def get_second_higgest_number_incorrect(numbers):
-    firstmax = numbers[0]
-    n = len(numbers)
-    for i in range(n):
-        if firstmax < numbers[i]:
-            firstmax = numbers[i]
-    secondmax = numbers[0]
-    for i in range(n):
-        if secondmax < numbers[i] and numbers[i] != firstmax:
-            secondmax = numbers[i]
-    return secondmax
-
-def get_second_higgest_number_correct(numbers):
+def get_second_higgest_number(numbers):
     n = len(numbers)
     if n >= 2:
         firstmax = max(numbers[0], numbers[1])
@@ -56,11 +44,7 @@ def get_third_higgest_number(numbers):
         raise Exception("the size list smaller from 3")
 
 numbers = [47,47,2,6,13,7,1,19,26,37,12,4,13,6,5,45,13,7]
-test = [18,20,20,5,7,-2,4,-4,-13,2,6,7,-4,2,19]
-h1 = get_second_higgest_number_incorrect(numbers) # [47,47,2,6,13,7,1,19,26,37,12,4,13,6,5,45,13,7] => 47
-print(h1)
-h2 = get_second_higgest_number_correct(numbers) # [47,47,2,6,13,7,1,19,26,37,12,4,13,6,5,45,13,7] => 45
+h2 = get_second_higgest_number(numbers) # [47,47,2,6,13,7,1,19,26,37,12,4,13,6,5,45,13,7] => 45
 print(h2)
-# exit(0)
 h3 = get_third_higgest_number(numbers) # [47,47,2,6,13,7,1,19,26,37,12,4,13,6,5,45,13,7] => 37
 print(h3)
