@@ -109,16 +109,16 @@ def get_third_lowest_number(numbers):
     else:
         raise Exception("the size list smaller from 3")
 
-numbers = [47,47,2,6,13,7,1,19,26,37,12,4,13,6,5,45,13,7]
-firstmax = get_first_higgest_number(numbers) # [47,47,2,6,13,7,1,19,26,37,12,4,13,6,5,45,13,7] => 47
+numbers = [1,19,26,37,12,4,13,6,5,45,13,7]
+firstmax = get_first_higgest_number(numbers) # [1,19,26,37,12,4,13,6,5,45,13,7] => 45
 print(firstmax)
-firstmin = get_first_lowest_number(numbers) # [47,47,2,6,13,7,1,19,26,37,12,4,13,6,5,45,13,7] => 1
+firstmin = get_first_lowest_number(numbers) # [1,19,26,37,12,4,13,6,5,45,13,7] => 1
 print(firstmin)
-secondmax = get_second_higgest_number(numbers) # [47,47,2,6,13,7,1,19,26,37,12,4,13,6,5,45,13,7] => 45
+secondmax = get_second_higgest_number(numbers) # [1,19,26,37,12,4,13,6,5,45,13,7] => 37
 print(secondmax)
-secondmin = get_second_lowest_number(numbers) # [47,47,2,6,13,7,1,19,26,37,12,4,13,6,5,45,13,7] => 2
+secondmin = get_second_lowest_number(numbers) # [1,19,26,37,12,4,13,6,5,45,13,7] => 4
 print(secondmin)
-thirdmax = get_third_higgest_number(numbers) # [47,47,2,6,13,7,1,19,26,37,12,4,13,6,5,45,13,7] => 37
+thirdmax = get_third_higgest_number(numbers) # [1,19,26,37,12,4,13,6,5,45,13,7] => 26
 print(thirdmax)
-thirdmin = get_third_lowest_number(numbers) # [47,47,2,6,13,7,1,19,26,37,12,4,13,6,5,45,13,7] => 4
+thirdmin = get_third_lowest_number(numbers) # [1,19,26,37,12,4,13,6,5,45,13,7] => 5
 print(thirdmin)
